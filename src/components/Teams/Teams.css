@@ -1,0 +1,14 @@
+.foto{
+    width: 90%;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.container-foto{
+    width: 200px;
+    list-style: none;
+    text-align: center;
+}
