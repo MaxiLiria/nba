@@ -1,0 +1,34 @@
+h2{
+    color: black;
+}
+
+label{
+    color: black;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13%;
+}
+#nombre{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 19%;
+}
+
+#email{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 24%;
+}
+#comentario{
+    width: 318px;
+    height: 87px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+#boton{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 17%;
+    margin-top: 2%;
+    width: 8%;
+}

@@ -1,16 +1,14 @@
 import React from 'react'
 import "./Teams.css"
 import Nav from '../Nav/Nav';
-import "../Nav/Nav.css"
-const TeamsWest = ({teamWest}) => {
-    const teamsWest = teamWest.filter(team => team.conferencia === "Oeste");
+
+const TeamsEast = ({teamEast}) => {
+    const east = teamEast.filter(team => team.conferencia === "Este");
     
     return (<>
-      <div>
-      <Nav/>
-      </div>
+    <Nav/>
       <div className='container'>
-        {teamsWest.map((item,i) => {
+        {east.map((item,i) => {
           return (<li className='card' key={i}>
               <img className='logo' src={item.foto} alt='foto'></img>
               <h3 className='team-name'>{item.nombre}</h3>
@@ -20,4 +18,5 @@ const TeamsWest = ({teamWest}) => {
       </>
     )
   }
-  export default TeamsWest
+  export default TeamsEast
+  

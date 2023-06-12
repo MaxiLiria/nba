@@ -1,14 +1,33 @@
-.foto{
-    width: 90%;
-}
 .container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 }
-.container-foto{
-    width: 200px;
+.card {
     list-style: none;
+    width: 200px;
+    height: 210px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
-}
+    padding: 20px 5px 20px 5px;
+    cursor: pointer;
+    margin: 0 0 10px 0;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+   
+  }
+  
+  .team-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  

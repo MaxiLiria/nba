@@ -1,8 +1,33 @@
-.container-img{
+body {
+    background-image: url('https://fondosmil.com/fondo/1785.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .container-img{
     display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+  }
+  
+ .cont-img{
+    width: 30%;
+    height: 30%;
     
-}
-
-.img-home{
-    width: 300px;
-}
+    margin: 50px;
+ }
+  
+  .img-home{
+    width: 100%;
+    box-shadow: 0 40px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+  }
+  
+  .img-home:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  
+  
