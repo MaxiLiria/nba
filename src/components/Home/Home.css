@@ -15,11 +15,11 @@ body {
     width: 30%;
     height: 30%;
     
-    margin: 50px;
+    margin: 46px;
  }
   
   .img-home{
-    width: 100%;
+    width: 90%;
     box-shadow: 0 40px 5px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
   }

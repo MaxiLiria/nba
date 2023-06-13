@@ -21,9 +21,14 @@ label{
     background-color: rgba(0, 0, 0, 0.2);
     width: 24%;
 }
+
+#password{
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 24%;
+}
 #comentario{
-    width: 318px;
-    height: 87px;
+    width: 384px;
+    height: 45px;
     background-color: rgba(0, 0, 0, 0.2);
 }
 #boton{
@@ -33,20 +38,9 @@ label{
     width: 8%;
 }
 
-.butom{
-    
-        font-family: Arial;
-        text-transform: uppercase;
-        font-weight: 800;
-        background-color: #f12525;
-        color: #0a0a0ae6;
-        padding: 16px;
-        font-size: 48px;
-        cursor: pointer;
-        border-width: 0;
-        position: fixed;
-        bottom:24px ;
-        left: 50%;
-        transform: translateX(-50%);z-index: 1;
-      
+#boton2{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 17%;
+    margin-top: 2%;
+    width: 8%;
 }

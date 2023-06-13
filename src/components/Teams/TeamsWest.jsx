@@ -1,20 +1,22 @@
 import React from 'react'
 import "./Teams.css"
 import Nav from '../Nav/Nav';
-import "../Nav/Nav.css"
+import { Link } from 'react-router-dom';
+
 const TeamsWest = ({teamWest}) => {
-    const teamsWest = teamWest.filter(team => team.conferencia === "Oeste");
+    const west = teamWest.filter(team => team.conferencia === "Oeste");
     
     return (<>
-      <div>
-      <Nav/>
-      </div>
+    <Nav/>
       <div className='container'>
-        {teamsWest.map((item,i) => {
-          return (<li className='card' key={i}>
+        {west.map((item,i) => {
+          return (
+              <li className='card' key={i}>
+              <Link to={`/west/${item.nombre}`}>
               <img className='logo' src={item.foto} alt='foto'></img>
-              <h3 className='team-name'>{item.nombre}</h3>
-          </li>)
+              <h3 className='team-name'>{item.nombre}</h3></Link>
+              </li>
+            )
         })}
       </div>
       </>
