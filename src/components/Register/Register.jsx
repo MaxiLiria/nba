@@ -20,16 +20,20 @@ const Register = () => {
 
     }
     const handleClick = () => {
-        API.post("/users/register", formState)
-            .then((res) => {
-
-              alert("Usuario creado, sera redirigido para loguerse")
-              
-              setTimeout(() => {
-                window.location.href = "/login"
-              }, 1000);
-            })
-    }
+      API.post("/users/register", formState)
+          .then((res) => {
+              if (res) {
+                  alert("Usuario creado, será redirigido para iniciar sesión");
+  
+                  setTimeout(() => {
+                      window.location.href = "/login";
+                  }, 1000);
+                }
+          })
+          .catch((error) => {
+              alert(error.response.data.message);
+          });
+  };
 
 
 

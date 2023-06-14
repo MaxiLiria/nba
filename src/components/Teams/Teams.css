@@ -20,6 +20,7 @@
     transform: scale(1.05);
   }
   .logo {
+    object-fit: cover;
     width: 100px;
     height: 100px;
     margin: 0 auto 20px;
