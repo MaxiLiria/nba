@@ -24,9 +24,6 @@ const Detail = ({list}) => {
         <div className='div-players'>
                 <h2 className='team-name'>Jugadores</h2>
              <p className="players" >{findTeam.jugadores}</p>   
-
-             <button id="boton">ELIMINAR</button>
-             <button id='boton'>MODIFICAR</button>
                 
         </div>
         </div>

@@ -5,7 +5,6 @@ import Teams from './Teams/Teams';
 import axios from 'axios';
 import Home from './Home/Home';
 import { Route, Routes, useNavigate,} from 'react-router-dom';
-import Players from './Players/Players';
 import NotFound from './NotFound/NotFound';
 import TeamsWest from './Teams/TeamsWest';
 import TeamEast from './Teams/TeamEast';
@@ -72,7 +71,6 @@ const loginUser = (formData) => {
     <Routes>
       <Route path="/" element={<Home/>}/>
       <Route path='/teams' element={<AuthRoute user={user} component={<Teams teams={listaNba}/>}/>}/>
-      <Route path='/players' element= {<AuthRoute user={user} component={<Players/>}/>}/>
       <Route path='/west' element = {<AuthRoute user={user} component={<TeamsWest teamWest = {listaNba}/>}/>}/>
       <Route path='/west/:nombre' element = {<AuthRoute user={user} component={<Detail list={listaNba}/>}/>}/>
       <Route path='/east' element = {<AuthRoute user={user} component={<TeamEast teamEast = {listaNba}/>}/>}/>

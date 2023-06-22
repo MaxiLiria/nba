@@ -10,7 +10,6 @@ const Nav = () => {
             <ul>
                 <li><Link className='li' to="/">HOME</Link></li>
                 <li><Link className='li' to="/teams">TEAMS</Link></li>
-                <li><Link className='li' to="/players">PLAYERS</Link></li>
                 <li><Link className='li' to="/contacto">CONTACTO</Link></li>
                 </ul>
                 </div>
