@@ -24,11 +24,15 @@
     width: 100px;
     height: 100px;
     margin: 0 auto 20px;
-   
   }
   
   .team-name {
     font-size: 18px;
     font-weight: bold;
   }
-  
+  #boton{
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 17%;
+    margin: 4%;
+    width: 20%;
+}

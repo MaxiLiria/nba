@@ -4,7 +4,6 @@ import Nav from '../Nav/Nav'
 
 
 const Detail = ({list}) => {
-
     const {  nombre } = useParams()
     console.log(nombre)
 
@@ -25,6 +24,9 @@ const Detail = ({list}) => {
         <div className='div-players'>
                 <h2 className='team-name'>Jugadores</h2>
              <p className="players" >{findTeam.jugadores}</p>   
+
+             <button id="boton">ELIMINAR</button>
+             <button id='boton'>MODIFICAR</button>
                 
         </div>
         </div>

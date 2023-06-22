@@ -26,7 +26,7 @@ function App() {
 
 
 
- const url = "http://localhost:3001/teams";
+ const url = "https://bd-nba.vercel.app/teams";
 
  useEffect(() => {
   
